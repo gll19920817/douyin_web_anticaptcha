@@ -39,5 +39,7 @@ for meth in methods:
     plt.subplot(122),plt.imshow(img,cmap = 'gray')
     plt.title('Detected Point'), plt.xticks([]), plt.yticks([])
     plt.suptitle(meth)
-
+    
+    plt.figtext(0.5, 0.01, f'Sliding x asix forward by: {top_left[0]}px', ha="center", bbox={"facecolor":"orange", "alpha":0.5, "pad":5})
+    
     plt.show()
